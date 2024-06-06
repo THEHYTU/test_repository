@@ -3,7 +3,11 @@
 int main(void)
 {
 printf("this is a test");
-printf("\n");
+
+
+
+
+printf("date");
 return;
 
 }
