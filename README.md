@@ -45,3 +45,23 @@ this is a test readme<br>
 2. 原神人物
  * 神里凌华
   * 我是山里灵活的狗
+
+### TABLE
+name|prince|score
+--|:--:|--:|
+狂怒|750|3
+狂徒|2900|5
+幻象|2900|4.5
+
+### 代码片段
+```c
+#include<cstdio.h>
+ int main()
+ {
+ printf("this is a test");
+ return 0;
+ }
+ ```
+### 凸显
+这是一个`测试`
+
