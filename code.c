@@ -7,7 +7,7 @@ printf("this is a test");
 printf("why so serious?");
 
 
-cout;
+printf("start");
 
 printf("date");
 return;
