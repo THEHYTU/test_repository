@@ -74,6 +74,7 @@
 	git config --global user.name "your name"
 	```
 [![2.png](https://i.postimg.cc/qRvr0JRD/2.png)](https://postimg.cc/WDCCwP00)
+
 	- 创建本地密文：
 
 	```c
@@ -89,7 +90,7 @@
 
 	- 绑定仓库路径：
 	  git remote orgin (别名)  后面加路径（可加双引号，删除remove),执行成功是没有反应的	
-	  ```c
+	```c
 	git remote origin ssh //ssh后面加路径	
 	```
 		
@@ -115,6 +116,7 @@
 	git push origin master
 	```
 [![image.jpg](https://i.postimg.cc/Jh1Vcrb7/image.jpg)](https://postimg.cc/LJ0bmMCG)
+
 - 云端更新，本地未更新
 
 	- 云端更新本地没更新会导致版本不一致，这时候本地更新到云端会被拒绝，需要使用pull命令
