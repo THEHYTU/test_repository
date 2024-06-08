@@ -49,45 +49,50 @@
 - 创建本地仓库
 
 	- 命令：
-```C
+	```C
 	git init
+	
 	```
 	- 属于隐藏文件，使用ls -a查看
-	[![image.png](https://i.postimg.cc/K8XNMtq4/image.png)](https://postimg.cc/fJKm4Shh)
+
+[![image.png](https://i.postimg.cc/K8XNMtq4/image.png)](https://postimg.cc/fJKm4Shh)
 
 - 绑定设备与账户
 
 	- 查看配置文件：
 	```c
 	git config --list
+	
 	```
 	- 设置用户邮箱：
 	```c
-	git config --global user.email "your email"
+	git config --global user.email "your email":
 	```
 
 	- 设置用户名字：
-```c
+	```c
 	git config --global user.name "your name"
 	```
+[![2.png](https://i.postimg.cc/qRvr0JRD/2.png)](https://postimg.cc/WDCCwP00)
 	- 创建本地密文：
-```c
-	ssh-keygen -t rsa -C "注册邮箱“
-```
-		- 在相应目录中查找，使用记事本打开，末尾要有邮箱
-		- 在github密钥处绑定，绑定时需要重新输入密码
-		- -t是加密类型，rsa是非对称加密算法
-
+	```c
+	ssh-keygen -t rsa -C //-t是加密类型，rsa是非对称加密算法
+	```
+	- 在相应目录中查找，使用记事本打开，末尾要有邮箱
+	- 在github密钥处绑定，绑定时需要重新输入密码
 	- 测试是否成功：
 	```c
 	ssh -T git@github.com
-```
-		- 
-
-	- 绑定仓库路径：git remote orgin(这是别名) 路径（可加双引号，删除remove),执行成功是没有反应的
-	``` c
-	git remote origin ssh路径
 	```
+[![image.png](https://i.postimg.cc/rmZkwBRV/image.png)](https://postimg.cc/HcMKSPtR)
+
+	- 绑定仓库路径：
+	  git remote orgin (别名)  后面加路径（可加双引号，删除remove),执行成功是没有反应的
+         
+	 ```c
+	git remote origin ssh //ssh后面加路径
+	
+	 ```
 
 ### 本地设备与云端的交互
 
@@ -98,35 +103,40 @@
 	```c
 	git add code.c
 	```
+
 	- 使用git commit -m "中文、英文提交声明“,提交到本地仓库
 	```c 
 	git commit -m "this is a test commit"
 	```
+
 	- 使用git push orgin master提交到云端（需要有网络，别名要正确，如果有同名则覆盖，无则创建）
+	
 	```c
 	git push origin master
 	```
-
+[![image.jpg](https://i.postimg.cc/Jh1Vcrb7/image.jpg)](https://postimg.cc/LJ0bmMCG)
 - 云端更新，本地未更新
 
 	- 云端更新本地没更新会导致版本不一致，这时候本地更新到云端会被拒绝，需要使用pull命令
 	- 第一步：
-```c
+	```c
 	git pull --rebase orgin master
 	```
+
 	- 第二步选择方式
 	```c
 
 		 git rebase --skip //把引起冲突的commmit丢掉
 		- git rebase --rebort  //恢复rebase之前的代码
 		- git rebase --continue //合并冲突，解决冲突，再次提交解决完的代码
-```
+	```
+
 	- 第三步正常进行上传更新
 
 - 下载
-```c
+	```c
 	 git clone http(复制粘贴)
-```
+	```
 - 其他命令
 
 	- git status查看状态，可以看到你的删除操作
@@ -160,6 +170,7 @@
 		- *空格 一级列表标题
 		- 换行加table，*空格 二级标题（三级列表类似）
 
+
 - ~~
 
 	- \~~内容~~，删除线
@@ -175,11 +186,8 @@
 
 	- 有序列表，使用方法与无序一致，可以相互混合使用
 	- 示例图
-
-		- 
-		- 表现效果
-
-			- 
+[![image.png](https://i.postimg.cc/q7jf1PLs/image.png)](https://postimg.cc/JyDdndS0)
+[![image.jpg](https://i.postimg.cc/j55pmMgG/image.jpg)](https://postimg.cc/8F2XrmVH)
 
 - 表格
 
@@ -195,18 +203,17 @@
 
 	- 示例图
 
-		- 
-		- 
+[![image.png](https://i.postimg.cc/2SY8Mf4M/image.png)](https://postimg.cc/Vd780pZW)
+[![image.png](https://i.postimg.cc/YCxqwyR9/image.png)](https://postimg.cc/RWNz7dj5)
+
 
 - `(反点)
 
 	- \`\`\`代码类型  代码 \`\`\`  
+[![image.png](https://i.postimg.cc/6QjW82Dx/image.png)](https://postimg.cc/p9jb7TWs)
 
-		- 
-
-	- 凸显，\`内容`
-
-		- 
+	- 凸显，\`内容\`
+[![image.png](https://i.postimg.cc/ZRWTpYSB/image.png)](https://postimg.cc/47TkTgns)
 
 - 超链接
 
