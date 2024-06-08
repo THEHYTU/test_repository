@@ -75,6 +75,7 @@
 	```
 [![2.png](https://i.postimg.cc/qRvr0JRD/2.png)](https://postimg.cc/WDCCwP00)
 	- 创建本地密文：
+
 	```c
 	ssh-keygen -t rsa -C //-t是加密类型，rsa是非对称加密算法
 	```
@@ -87,12 +88,11 @@
 [![image.png](https://i.postimg.cc/rmZkwBRV/image.png)](https://postimg.cc/HcMKSPtR)
 
 	- 绑定仓库路径：
-	  git remote orgin (别名)  后面加路径（可加双引号，删除remove),执行成功是没有反应的
-         
-	 ```c
-	git remote origin ssh //ssh后面加路径
-	
-	 ```
+	  git remote orgin (别名)  后面加路径（可加双引号，删除remove),执行成功是没有反应的	
+	  ```c
+	git remote origin ssh //ssh后面加路径	
+	```
+		
 
 ### 本地设备与云端的交互
 
@@ -185,8 +185,8 @@
 - 数字.
 
 	- 有序列表，使用方法与无序一致，可以相互混合使用
-	- 示例图
 [![image.png](https://i.postimg.cc/q7jf1PLs/image.png)](https://postimg.cc/JyDdndS0)
+
 [![image.jpg](https://i.postimg.cc/j55pmMgG/image.jpg)](https://postimg.cc/8F2XrmVH)
 
 - 表格
@@ -201,9 +201,8 @@
 		- ：--：|居中
 		- --:|右对齐（后面没有其他属性就不跟|）
 
-	- 示例图
-
 [![image.png](https://i.postimg.cc/2SY8Mf4M/image.png)](https://postimg.cc/Vd780pZW)
+
 [![image.png](https://i.postimg.cc/YCxqwyR9/image.png)](https://postimg.cc/RWNz7dj5)
 
 
