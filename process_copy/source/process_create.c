@@ -1,10 +1,4 @@
 #include "process_copy.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
-#include <sys/wait.h>
-#include <string.h>
 
 void process_create(const char *src, const char *dest, int pronum, int blocksize) {
     pid_t pid;
