@@ -1,10 +1,12 @@
 # C复习
 
-## 看图说话部分
+## 一看图说话部分
 
-### 一、从源代码到exe
+### 1、从源代码到exe
 
-#### ![image-20240626090954774](C:\Users\27811\AppData\Roaming\Typora\typora-user-images\image-20240626090954774.png)
+
+
+#### [![1.jpg](https://i.postimg.cc/Qtk8BTp5/1.jpg)](https://postimg.cc/1nXh2475)
 
 （1）从源代码到exe需要经历5个时期
 
@@ -36,8 +38,28 @@
 
 （4）产生LINK错误是连接期出了问题，可能是头文件也可能是main函数有问题
 
-### 二、基本数据类型
+### 2、基本数据类型
 
-![image-20240626092829141](C:\Users\27811\AppData\Roaming\Typora\typora-user-images\image-20240626092829141.png)
+[![2.jpg](https://i.postimg.cc/3r1rY2rQ/2.jpg)](https://postimg.cc/Yj4BxGmd)
 
 （1）基本数据类型包括了两大类，分别是数值类型和字符类型，其中数值类型又分为整型和浮点型。不算无符号类型在内的话，整型包括了短整型，整型，长整型，长长整型。浮点型包括单精度，双精度和多精度浮点类型。
+
+(2)[![image.jpg](https://i.postimg.cc/RhZBNbC5/image.jpg)](https://postimg.cc/zb6MQ7R0)
+
+(3)基本数据类型的存储原理包括了定点存储和浮点存储。定点存储是的存储方式是原码反码补码，浮点存储是小数点左边除二区域，小数点右边乘二取余
+
+（4）不同字面值的常量后缀与前缀
+
+[![image.png](https://i.postimg.cc/J0nf1DKR/image.png)](https://postimg.cc/gXCSs0f7)
+
+### 3、字符在屏幕上显示的原理
+
+[![3.jpg](https://i.postimg.cc/Gh6WCpD1/3.jpg)](https://postimg.cc/9rt8PC1x)
+
+（1）字符型的本质是影像编码，一个整型数，根据预先指定好的编码规则，不同的整型数对应不同的字符。它的存储原理是定点存储，占一个字节
+
+（2）字符型常量的表示方式 ’A' 十进制 八进制 十六进制
+
+（3）取消含义或者赋予含义，如 /101如/n如/#
+
+(4)简单密码判断，联系IM中密码的设置，而实际上更多的应该是正则表达式
